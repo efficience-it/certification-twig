@@ -50,12 +50,6 @@ There are 2 main instructions for passing it:
 *   [filter](https://twig.symfony.com/doc/3.x/filters/filter.html)
 *   [first](https://twig.symfony.com/doc/3.x/filters/first.html)
 *   [format](https://twig.symfony.com/doc/3.x/filters/format.html)
-*   [format\_currency](https://twig.symfony.com/doc/3.x/filters/format_currency.html)
-*   [format\_date](https://twig.symfony.com/doc/3.x/filters/format_date.html)
-*   [format\_datetime](https://twig.symfony.com/doc/3.x/filters/format_datetime.html)
-*   [format\_number](https://twig.symfony.com/doc/3.x/filters/format_number.html)
-*   [format\_time](https://twig.symfony.com/doc/3.x/filters/format_time.html)
-*   [html\_to\_markdown](https://twig.symfony.com/doc/3.x/filters/html_to_markdown.html)
 *   [join](https://twig.symfony.com/doc/3.x/filters/join.html)
 *   [json\_encode](https://twig.symfony.com/doc/3.x/filters/json_encode.html)
 *   [keys](https://twig.symfony.com/doc/3.x/filters/keys.html)
@@ -69,7 +63,6 @@ There are 2 main instructions for passing it:
 *   [raw](https://twig.symfony.com/doc/3.x/filters/raw.html)
 *   [reduce](https://twig.symfony.com/doc/3.x/filters/reduce.html)
 *   [replace](https://twig.symfony.com/doc/3.x/filters/replace.html)
-
 *   [reverse](https://twig.symfony.com/doc/3.x/filters/reverse.html)
 *   [round](https://twig.symfony.com/doc/3.x/filters/round.html)
 *   [slice](https://twig.symfony.com/doc/3.x/filters/slice.html)
@@ -79,7 +72,6 @@ There are 2 main instructions for passing it:
 *   [striptags](https://twig.symfony.com/doc/3.x/filters/striptags.html)
 *   [title](https://twig.symfony.com/doc/3.x/filters/title.html)
 *   [trim](https://twig.symfony.com/doc/3.x/filters/trim.html)
-*   [u](https://twig.symfony.com/doc/3.x/filters/u.html)
 *   [upper](https://twig.symfony.com/doc/3.x/filters/upper.html)
 *   [url\_encode](https://twig.symfony.com/doc/3.x/filters/url_encode.html)
 
@@ -149,6 +141,12 @@ All those Filters, Functions ... with an Extension like MarkdownExtension, Strin
 - locale_names
 - script_names
 - timezone_names
+- format_time
+- html_to_markdown
+- format_date
+- format_datetime
+- format_number
+- format_currency
 ----------------------
 And to register, buy a voucher.
 

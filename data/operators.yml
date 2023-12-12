@@ -1,0 +1,7 @@
+category: Operators
+entities:
+  -
+    question: ''
+    answers:
+      - { value: '', correct: true }
+    help: ''
