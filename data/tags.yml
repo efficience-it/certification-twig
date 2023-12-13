@@ -80,7 +80,7 @@ entities:
   -
     question: 'Which of these affirmation is valid ?'
     answers:
-      - { value: '{{ attribute(object, "data-foo") }}', correct: false }
+      - { value: '{{ attribute(object, "data-foo") }}', correct: true }
       - { value: '{{ attribute(object, method) }}', correct: true }
       - { value: '{{ attribute(object, method, arguments) }}', correct: true }
       - { value: '{{ attribute(array, key) }}', correct: false }

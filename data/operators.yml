@@ -1,7 +1,55 @@
 category: Operators
 entities:
   -
-    question: ''
+    question: 'If the object has the method getBar(), isBar() and hasBar(), which one will be executed with {{ object.bar }} ?'
     answers:
-      - { value: '', correct: true }
-    help: ''
+      - { value: 'hasBar()', correct: false }
+      - { value: 'isBar()', correct: false }
+      - { value: 'getBar()', correct: true }
+    help: 'https://twig.symfony.com/doc/3.x/templates.html#variables'
+  -
+    question: 'If a variable or attribute does not exist, what will you when the strict_variables option is set to false ?'
+    answers:
+      - { value: 'null', correct: true }
+      - { value: 'undefined', correct: false }
+      - { value: 'throw a TwigException', correct: false }
+    help: 'https://twig.symfony.com/doc/3.x/templates.html#variables'
+  -
+    question: 'Which variables are always available in templates ?'
+    answers:
+      - { value: 'app', correct: false }
+      - { value: '_self', correct: true }
+      - { value: '_request', correct: false }
+      - { value: '_context', correct: true }
+      - { value: '_server', correct: false }
+      - { value: '_charset', correct: true }
+    help: 'https://twig.symfony.com/doc/3.x/templates.html#variables'
+  -
+    question: 'What last filter will be applied here {{ (name|capitalize|title)|upper|lower }} ?'
+    answers:
+      - { value: 'capitalie', correct: false }
+      - { value: 'title', correct: false }
+      - { value: 'upper', correct: false }
+      - { value: 'lower', correct: true }
+    help: 'https://twig.symfony.com/doc/3.x/templates.html#variables'
+  -
+    question: 'Which function definition is allowed ?'
+    answers:
+      - { value: 'range(1, 10, 2)', correct: true }
+      - { value: 'range(10, 2.5, -4)', correct: true }
+      - { value: 'range(high=10, step=2, low=1)', correct: true }
+      - { value: 'range(max=10, step=2, min=1)', correct: false }
+    help: 'https://twig.symfony.com/doc/3.x/templates.html#variables'
+  -
+    question: 'Do these function output the same {{ "now"|date(null, "Europe/Paris") }} and {{ "now"|date(timezone="Europe/Paris") }} ?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://twig.symfony.com/doc/3.x/templates.html#variables'
+  -
+    question: '{{ foo ?: "no" }} is the same as {{ foo ? foo : "no" }} ?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://twig.symfony.com/doc/3.x/templates.html#variables'
+
