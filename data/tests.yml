@@ -17,7 +17,7 @@ entities:
       - { value: 'TwigException', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/tests/even.html'
   -
-    question: 'What will render {% if false is even %}Even{% endif %}'
+    question: 'What will render {% if false is even %} Even {% endif %}'
     answers:
       - { value: 'false', correct: true }
       - { value: 'Nothing', correct: true }
@@ -169,65 +169,51 @@ entities:
       - { value: 'TwigException', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/tests/divisibleby.html'
   -
-    question: 'Is it possible to access to Globale Constants and class Constants ?'
+    question: 'Is it possible to access to Global Constants and class Constants ?'
     answers:
-      - {value: 'Yes', correct: true }
-      - {value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/tests/constant.html'
   -
     question: 'How to call the constant from twig ?'
     answers:
-      - {value: '{{ getConstant("Post::Value") }}', correct: false }
-      - {value: '{{ get_constant("Post::Value") }}', correct: false }
-      - {value: '{{ constant("Post::Value") }}', correct: true }
-      - {value: 'Impossible, you"ll have to pass threw PHP', correct: false }
+      - { value: '{{ getConstant("Post::Value") }}', correct: false }
+      - { value: '{{ get_constant("Post::Value") }}', correct: false }
+      - { value: '{{ constant("Post::Value") }}', correct: true }
+      - { value: 'Impossible, you"ll have to pass through PHP', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/tests/constant.html'
   -
     question: 'How to compare a constant with a value ?'
     answers:
-      - {value: '{{ value === constant("Post::Value") }}', correct: true }
-      - {value: '{{ value same as constant("Post::Value") }}', correct: true }
-      - {value: '{{ value is constant("Post::Value") }}', correct: true }
+      - { value: '{{ value === constant("Post::Value") }}', correct: true }
+      - { value: '{{ value same as constant("Post::Value") }}', correct: true }
+      - { value: '{{ value is constant("Post::Value") }}', correct: true }
     help: 'https://twig.symfony.com/doc/3.x/tests/constant.html'
   -
-    question: 'What kind of variables "defined" can check ?'
+    question: 'What kind of variables can "defined" check ?'
     answers:
-      - {value: 'simples variables', correct: true }
-      - {value: 'attributes on variables names', correct: true }
-      - {value: 'key on variables names', correct: true }
-    help: 'https://twig.symfony.com/doc/3.x/tests/constant.html'
-  -
-    question: 'What kind of variables "defined" can check ?'
-    answers:
-      - {value: 'simples variables', correct: true }
-      - {value: 'attributes on variables names', correct: true }
-      - {value: 'key on variables names', correct: true }
-    help: 'https://twig.symfony.com/doc/3.x/tests/constant.html'
+      - { value: 'simple variables', correct: true }
+      - { value: 'attributes on variable names', correct: true }
+      - { value: 'keys on variable names', correct: true }
+    help: 'https://twig.symfony.com/doc/3.x/tests/defined.html'
   -
     question: 'What is the return type of the test iterable ?'
     answers:
-      - {value: 'boolean', correct: true }
-      - {value: 'string', correct: false }
-      - {value: 'array',  correct: false }
+      - { value: 'boolean', correct: true }
+      - { value: 'string', correct: false }
+      - { value: 'array', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/tests/iterable.html'
   -
-    question: 'What is the return type of the test iterable ?'
+    question: 'What will render by {% if [] is iterable %} iterable {% endif %} ?'
     answers:
-      - {value: 'boolean', correct: true }
-      - {value: 'string', correct: false }
-      - {value: 'array',  correct: false }
+      - { value: 'iterable', correct: true }
+      - { value: 'false', correct: false }
+      - { value: 'TwigException', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/tests/iterable.html'
   -
-    question: 'What is render by {% if [] is iterable %} iterable {% endif %} ?'
+    question: 'What will render by {% if 1..4 is iterable %} iterable {% endif %} ?'
     answers:
-      - {value: 'iterable', correct: true }
-      - {value: 'false', correct: false }
-      - {value: 'TwigException',  correct: false }
-    help: 'https://twig.symfony.com/doc/3.x/tests/iterable.html'
-  -
-    question: 'What is render by {% if 1..4 is iterable %} iterable {% endif %} ?'
-    answers:
-      - {value: 'iterable', correct: true }
-      - {value: 'false', correct: false }
-      - {value: 'TwigException',  correct: false }
+      - { value: 'iterable', correct: true }
+      - { value: 'false', correct: false }
+      - { value: 'TwigException', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/tests/iterable.html'

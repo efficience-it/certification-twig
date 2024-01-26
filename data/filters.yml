@@ -1,22 +1,22 @@
 category: Filters
 entities:
   -
-    question: 'Whats should return {% set number = -5.3 % %} {{ number|abs }}'
+    question: 'What should return {% set number = -5.3 %} {{ number|abs }}'
     answers:
       - { value: '5.3', correct: true }
       - { value: '5', correct: false }
-      - { value: 'TwigException no float value allowed', correct: false }
+      - { value: 'TwigException: No float value allowed', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/filters/abs.html'
   -
-    question: 'Whats should return {{ -5.3|abs }}'
+    question: 'What should return {{ -5.3|abs }}'
     answers:
       - { value: '-5.3', correct: true }
       - { value: '5.3', correct: false }
       - { value: '5', correct: false }
-      - { value: 'TwigException no float value allowed', correct: false }
+      - { value: 'TwigException: No float value allowed', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/filters/abs.html'
   -
-    question: 'Whats should return {{ "my first CAR"|capitalize }}'
+    question: 'What should return {{ "my first CAR"|capitalize }}'
     answers:
       - { value: 'My First Car', correct: false }
       - { value: 'My first car', correct: true }
@@ -24,7 +24,7 @@ entities:
       - { value: 'My first CAR', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/filters/capitalize.html'
   -
-    question: 'Whats should return {{ "my first CAR"|upper }}'
+    question: 'What should return {{ "my first CAR"|upper }}'
     answers:
       - { value: 'My First Car', correct: false }
       - { value: 'My first car', correct: false }
@@ -32,7 +32,7 @@ entities:
       - { value: 'My first CAR', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/filters/upper.html'
   -
-    question: 'Whats should return {{ "my first CAR"|lower }}'
+    question: 'What should return {{ "my first CAR"|lower }}'
     answers:
       - { value: 'My First Car', correct: false }
       - { value: 'my first car', correct: true }
@@ -40,7 +40,7 @@ entities:
       - { value: 'My first CAR', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/filters/lower.html'
   -
-    question: 'Whats should return {{ "my first CAR"|title }}'
+    question: 'What should return {{ "my first CAR"|title }}'
     answers:
       - { value: 'My First Car', correct: false }
       - { value: 'My first car', correct: false }
@@ -48,14 +48,14 @@ entities:
       - { value: 'My First Car', correct: true }
     help: 'https://twig.symfony.com/doc/3.x/filters/capitalize.html'
   -
-    question: 'Whats should return {{ [1,3,5,7,9]|length }}'
+    question: 'What should return {{ [1,3,5,7,9]|length }}'
     answers:
       - { value: '5', correct: true }
       - { value: '1', correct: false }
       - { value: '9', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/filters/length.html'
   -
-    question: 'Whats should return {{ "abcdefghijkl"|length }}'
+    question: 'What should return {{ "abcdefghijkl"|length }}'
     answers:
       - { value: '12', correct: true }
       - { value: '10', correct: false }
@@ -68,7 +68,7 @@ entities:
       - { value: 'column([{ "fruit" : "apple"}, {"fruit" : "orange" }], "fruit")', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/filters/column.html'
   -
-    question: 'Is that true "123" same as ["1","2","3"]|join ?'
+    question: 'Is that true "123" same as {{ ["1","2","3"]|join }} ?'
     answers:
       - { value: 'No', correct: false }
       - { value: 'Yes', correct: true }
@@ -80,7 +80,7 @@ entities:
       - { value: 'By setting in the config.yml twig.join.separator', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/filters/join.html'
   -
-    question: 'What"s the second parameter in the join filter ?'
+    question: 'What is the second parameter in the join filter ?'
     answers:
       - { value: 'The separator for the join', correct: false }
       - { value: 'The catch Exception boolean', correct: false }
@@ -92,7 +92,7 @@ entities:
     answers:
       - { value: 'The join will not be applied', correct: false }
       - { value: 'The split will not be applied', correct: false }
-      - { value: 'Nothing, one do the reverse action of the other', correct: true }
+      - { value: 'Nothing, one does the reverse action of the other', correct: true }
     help: 'https://twig.symfony.com/doc/3.x/filters/split.html'
   -
     question: 'What is the output of this {{ "aabbcc"|split("", 2) }} ?'
@@ -113,21 +113,21 @@ entities:
       - { value: 'No', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/filters/json_encode.html'
   -
-    question: 'Which of these twig code output 8 ?'
+    question: 'Which of these twig code outputs 8 ?'
     answers:
       - { value: '{{ [1, 2, 4, 8]|last }}', correct: true }
       - { value: '{{ 1248|last }}', correct: true }
       - { value: '{{ { a: 1, b: 8, d: 4, e: 2 }|last }}', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/filters/last.html'
   -
-    question: 'Which of these twig code output 1 ?'
+    question: 'Which of these twig code outputs 1 ?'
     answers:
       - { value: '{{ [1, 2, 4, 8]|first }}', correct: true }
       - { value: '{{ 1248|last }}', correct: true }
       - { value: '{{ { a: 8, b: 1, d: 4, e: 2 }|last }}', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/filters/first.html'
   -
-    question: 'Which of these twig code output -45.6 ?'
+    question: 'Which of these twig code outputs -45.6 ?'
     answers:
       - { value: '{{ -42.55|round(1, "floor") }}', correct: true }
       - { value: '{{ -42.55|round(1, "common") }}', correct: true }
@@ -143,7 +143,7 @@ entities:
       - { value: 'The variable is null', correct: true }
     help: 'https://twig.symfony.com/doc/3.x/filters/default.html'
   -
-    question: 'Which php function does the {{ url_encode() }} uses ?'
+    question: 'Which PHP function does the {{ url_encode() }} use?'
     answers:
       - { value: 'rawurlencode', correct: true }
       - { value: 'raw_url_encode', correct: false }
@@ -165,10 +165,10 @@ entities:
     answers:
       - { value: 'The number of reverse to execute', correct: false }
       - { value: '"key|value" to order by the key or the value of the array given', correct: false }
-      - { value: 'a bool to preserve the keys in the reordering  I like Twig', correct: true }
+      - { value: 'A bool to preserve the keys in the reordering I like Twig', correct: true }
     help: 'https://twig.symfony.com/doc/3.x/filters/reverse.html'
   -
-    question: 'Which of these sentence wille return "I like fruits" ?'
+    question: 'Which of these sentences will return "I like fruits" ?'
     answers:
       - { value: '{{ "I like this"|replace({"this": "fruits"}) }}', correct: true }
       - { value: '{{ "I like %this%"|replace({"%this%": "fruits"}) }}', correct: true }
@@ -205,41 +205,33 @@ entities:
   -
     question: 'What is the supported value for the filter "date_modify" ?'
     answers:
-      - { value: 'string under format of strtotime', correct: true }
+      - { value: 'String under the format of strtotime', correct: true }
       - { value: 'DateTime object', correct: true }
       - { value: 'Date object', correct: false }
-      - { value: 'int od the time() function', correct: false }
-    help: 'https://twig.symfony.com/doc/3.x/filters/date_modify.html'
-  -
-    question: 'What is the supported value for the filter "date_modify" ?'
-    answers:
-      - { value: 'string under format of strtotime', correct: true }
-      - { value: 'DateTime object', correct: true }
-      - { value: 'Date object', correct: false }
-      - { value: 'int od the time() function', correct: false }
+      - { value: 'Int of the time() function', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/filters/date_modify.html'
   -
     question: 'What is the point of the filters batch ?'
     answers:
-      - { value: 'To launch a command line from twig', correct: false }
+      - { value: 'To launch a command line from Twig', correct: false }
       - { value: 'To build a list of lists with the given number of items', correct: true }
       - { value: 'To send data to a controller', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/filters/batch.html'
   -
-    question: 'What is the default "decimal places" formated by the "number_format" ?'
+    question: 'What is the default "decimal places" formatted by the "number_format" ?'
     answers:
-      - { value: '"0", so 42.44 become 42', correct: true }
-      - { value: '"1", so 42.44 become 42.4', correct: false }
-      - { value: '"2", so 42.44 stay 42.44', correct: false }
+      - { value: '"0", so 42.44 becomes 42', correct: true }
+      - { value: '"1", so 42.44 becomes 42.4', correct: false }
+      - { value: '"2", so 42.44 stays 42.44', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/filters/number_format.html'
   -
-    question: 'What is the default "decimal point" formated by the "number_format" ?'
+    question: 'What is the default "decimal point" formatted by the "number_format" ?'
     answers:
       - { value: '".", so we see 42.44', correct: true }
       - { value: '",", so we see 42,44', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/filters/number_format.html'
   -
-    question: 'What is the default "thousands separator" formated by the "number_format" ?'
+    question: 'What is the default "thousands separator" formatted by the "number_format" ?'
     answers:
       - { value: '".", so we see 1.042.44', correct: false }
       - { value: '",", so we see 1,042.44', correct: true }
@@ -286,7 +278,7 @@ entities:
       - { value: 'the default value', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/filters/date.html'
   -
-    question: 'What is the default format od the filter date ?'
+    question: 'What is the default format of the filter date ?'
     answers:
       - { value: 'm/d/Y', correct: false }
       - { value: 'F jS \\a\\t g:ia', correct: false }
@@ -345,21 +337,21 @@ entities:
     question: 'Does the "sort" filters maintain index association ?'
     answers:
       - { value: 'Yes', correct: true }
-      - { value: 'No, but i can set it', correct: false }
+      - { value: 'No, but I can set it', correct: false }
       - { value: 'Impossible', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/functions/sort.html'
   -
-    question: 'How can i get the current iteration during a loop for ?'
+    question: 'How can I get the current iteration during a loop for ?'
     answers:
-      - { value: 'using loop.index which start at 1', correct: true }
-      - { value: 'using loop.index0 which start at 0', correct: true }
-      - { value: 'using loop.getIndex which start at 1', correct: false }
-      - { value: 'using loop.getIndex0 which start at 0', correct: false }
+      - { value: 'using loop.index which starts at 1', correct: true }
+      - { value: 'using loop.index0 which starts at 0', correct: true }
+      - { value: 'using loop.getIndex which starts at 1', correct: false }
+      - { value: 'using loop.getIndex0 which starts at 0', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/tags/for.html'
   -
-    question: 'How can i know if my iteration is at it"s first iteration, or last iteration ?'
+    question: 'How can I know if my iteration is at its first iteration, or last iteration ?'
     answers:
-      - { value: 'By counting the length total, and substract the index', correct: false }
+      - { value: 'By counting the total length and subtracting the index', correct: false }
       - { value: 'By getting loop.first or loop.last', correct: true }
     help: 'https://twig.symfony.com/doc/3.x/tags/for.html'
   -
@@ -381,18 +373,18 @@ entities:
       - { value: 'html_attr', correct: true }
     help: 'https://twig.symfony.com/doc/3.x/filters/escape.html'
   -
-    question: 'What render this code: {% set sizes = [34, 36, 38, 40, 42] %}{{ sizes|filter(v => v > 38)|join(', ') }}'
+    question: 'What renders this code: {% set sizes = [34, 36, 38, 40, 42] %}{{ sizes|filter(v => v > 38)|join(', ') }}'
     answers:
       - { value: '34, 36', correct: false }
       - { value: '38', correct: false }
-      - { value: '40', '42', correct: true }
+      - { value: '40, 42', correct: true }
     help: 'https://twig.symfony.com/doc/3.x/filters/filter.html'
   -
     question: 'Does the "filter" parent() return the'
     answers:
       - { value: '34, 36', correct: false }
       - { value: '38', correct: false }
-      - { value: '40', '42', correct: true }
+      - { value: '40, 42', correct: true }
     help: 'https://twig.symfony.com/doc/3.x/filters/filter.html'
 
 
