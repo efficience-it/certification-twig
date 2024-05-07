@@ -152,4 +152,4 @@ And to register, buy a voucher.
 
 https://certification.symfony.com/exams/twig.html
 
-To train with our team, contact us on https://www.itefficience.com
+To train with our team, contact us on https://www.itefficience.com or see our article https://www.itefficience.com/article/twig-4-ce-que-lon-pourrait-attendre
