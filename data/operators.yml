@@ -8,7 +8,7 @@ entities:
       - { value: 'getBar()', correct: true }
     help: 'https://twig.symfony.com/doc/3.x/templates.html#variables'
   -
-    question: 'If a variable or attribute does not exist, what will you when the strict_variables option is set to false ?'
+    question: 'If a variable or attribute does not exist, what will you get when the strict_variables option is set to false ?'
     answers:
       - { value: 'null', correct: true }
       - { value: 'undefined', correct: false }
@@ -27,7 +27,7 @@ entities:
   -
     question: 'What last filter will be applied here {{ (name|capitalize|title)|upper|lower }} ?'
     answers:
-      - { value: 'capitalie', correct: false }
+      - { value: 'capitalize', correct: false }
       - { value: 'title', correct: false }
       - { value: 'upper', correct: false }
       - { value: 'lower', correct: true }

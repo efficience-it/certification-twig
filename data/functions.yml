@@ -18,8 +18,8 @@ entities:
   -
     question: 'What is the difference between max(3, 4, 12) and max([3,4,12]) ?'
     answers:
-      - { value: 'Min works only with an array', correct: false }
-      - { value: 'Min works only with a list', correct: false }
+      - { value: 'Max works only with an array', correct: false }
+      - { value: 'Max works only with a list', correct: false }
       - { value: 'No difference', correct: true }
     help: 'https://twig.symfony.com/doc/3.x/functions/max.html'
   -
@@ -31,7 +31,7 @@ entities:
       - { value: 'TwigException', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/functions/max.html'
   -
-    question: 'Will {{ random("ABCD") }} will render B ?'
+    question: 'Will {{ random("ABCD") }} render B ?'
     answers:
       - { value: 'Maybe', correct: true }
       - { value: 'Yes', correct: false }
@@ -79,7 +79,7 @@ entities:
       - { value: 'orange\napple\norange\napple\norange', correct: true }
     help: 'https://twig.symfony.com/doc/3.x/functions/cycle.html'
   -
-    question: 'What are to options available in an include ?'
+    question: 'What are the options available in an include ?'
     answers:
       - { value: 'with_context=true|false', correct: true }
       - { value: 'context=true|false', correct: false }

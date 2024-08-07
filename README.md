@@ -151,5 +151,5 @@ All those Filters, Functions ... with an Extension like MarkdownExtension, Strin
 And to register, buy a voucher.
 
 https://certification.symfony.com/exams/twig.html
-
+For more informations, read this article: https://www.itefficience.com/article/la-certification-twig-une-1ere-pour-le-chemin-de-la-certif-symfony
 To train with our team, contact us on https://www.itefficience.com
