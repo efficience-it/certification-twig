@@ -1,0 +1,14 @@
+{
+  "name": "efficience_it/certificationy-twig",
+  "type": "library",
+  "keywords": ["symfony", "certification", "test", "exam", "twig"],
+  "description": "A series of questions to prepare for the certification Twwig",
+  "homepage": "https://github.com/efficience-it/certification-twig",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Louis-Arnaud Catoire",
+      "email": "la.catoire@gmail.com"
+    }
+  ]
+}
