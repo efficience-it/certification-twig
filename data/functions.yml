@@ -26,7 +26,8 @@ entities:
     question: 'What will be rendered with {{ max({2: "e", 3: "a", 1: "b", 5: "d", 4: "c"}) }} ?'
     answers:
       - { value: 'Max can only compare int values', correct: false }
-      - { value: 'a', correct: true }
+      - { value: 'a', correct: false }
+      - { value: 'e', correct: true }
       - { value: '1', correct: false }
       - { value: 'TwigException', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/functions/max.html'
