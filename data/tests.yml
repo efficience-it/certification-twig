@@ -12,8 +12,8 @@ entities:
     question: 'What will render {% if 1 is even %} Even {% endif %}'
     answers:
       - { value: 'false', correct: false }
-      - { value: 'Nothing', correct: false }
-      - { value: 'Even', correct: true }
+      - { value: 'Nothing', correct: true }
+      - { value: 'Even', correct: false }
       - { value: 'TwigException', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/tests/even.html'
   -
