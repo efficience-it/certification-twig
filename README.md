@@ -1,3 +1,6 @@
+![Linter Status](https://github.com/efficience-it/certification-twig/actions/workflows/yaml-lint.yaml/badge.svg)
+![Validation Content Status](https://github.com/efficience-it/certification-twig/actions/workflows/validate-content.yaml/badge.svg)
+
 # 🎓 Certification to Twig
 
 Welcome to this repository! Here, you can find all the resources you need to prepare for the Twig certification exam. This certification will help you master Twig and demonstrate your skills in template creation and manipulation.
