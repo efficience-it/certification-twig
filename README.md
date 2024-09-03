@@ -1,20 +1,19 @@
-# Certification to twig
+# 🎓 Certification to Twig
 
-Linked to this documentation, this repository is a way for developper to train to be certificated for Twig.
+Welcome to this repository! Here, you can find all the resources you need to prepare for the Twig certification exam. This certification will help you master Twig and demonstrate your skills in template creation and manipulation.
+## 📚 What Will You Learn?
 
-## What to learn ?
+To pass the Twig certification, focus on two main areas:
 
-There are 2 main instructions for passing it:
+1. Core Knowledge: Start by reading and understanding the key concepts in these documents:
+   * Twig Template for Designers (Twig 2.x) 
+   * Twig Template for Designers (Twig 3.x)
 
-- You must read and understand well, master the elements of this page: <b>Template For Designers</b>
-    - https://twig.symfony.com/doc/2.x/templates.html
-    - https://twig.symfony.com/doc/3.x/templates.html
+2. Tags, Functions, and Filters: Get familiar with the essential Twig tags, functions, and filters listed below. Aim to master these within a week, especially if you already have some experience with Twig.
 
-- Then they will ask you to know the tags, functions, and filters below. In reality, If you allow 1 week to master everything (if you have practiced before of course), it should be good.
+### 🏷️ Essential Twig Tags
 
---------------------
-
-### Tags' List
+Learn these tags to control template behavior:
 
 *   [apply](https://twig.symfony.com/doc/3.x/tags/apply.html)
 *   [autoescape](https://twig.symfony.com/doc/3.x/tags/autoescape.html)
@@ -36,7 +35,7 @@ There are 2 main instructions for passing it:
 *   [verbatim](https://twig.symfony.com/doc/3.x/tags/verbatim.html)
 *   [with](https://twig.symfony.com/doc/3.x/tags/with.html)
 
-### Filters' List
+### 🔍 Key Twig Filters
 
 *   [abs](https://twig.symfony.com/doc/3.x/filters/abs.html)
 *   [batch](https://twig.symfony.com/doc/3.x/filters/batch.html)
@@ -75,7 +74,7 @@ There are 2 main instructions for passing it:
 *   [upper](https://twig.symfony.com/doc/3.x/filters/upper.html)
 *   [url\_encode](https://twig.symfony.com/doc/3.x/filters/url_encode.html)
 
-### Functions' list
+### 🧩 Important Twig Functions
 
 *   [attribute](https://twig.symfony.com/doc/3.x/functions/attribute.html)
 *   [block](https://twig.symfony.com/doc/3.x/functions/block.html)
@@ -92,7 +91,7 @@ There are 2 main instructions for passing it:
 *   [source](https://twig.symfony.com/doc/3.x/functions/source.html)
 *   [template\_from\_string](https://twig.symfony.com/doc/3.x/functions/template_from_string.html)
 
-### Tests' list
+### 📝 Twig Tests and Operators
 
 *   [constant](https://twig.symfony.com/doc/3.x/tests/constant.html)
 *   [defined](https://twig.symfony.com/doc/3.x/tests/defined.html)
@@ -104,52 +103,26 @@ There are 2 main instructions for passing it:
 *   [odd](https://twig.symfony.com/doc/3.x/tests/odd.html)
 *   [sameas](https://twig.symfony.com/doc/3.x/tests/sameas.html)
 
-### Operators' list
+Operators help you perform logical, arithmetic, and other operations:
 
 *   [in](https://twig.symfony.com/doc/3.x/templates.html#containment-operator)
 *   [is](https://twig.symfony.com/doc/3.x/templates.html#test-operator)
-*   [Math](https://twig.symfony.com/doc/3.x/templates.html#math) (+, -, /, %, //, \*, \*\*)
-*   [Logic](https://twig.symfony.com/doc/3.x/templates.html#logic) (and, or, not, (), b-and, b-xor, b-or)
-*   [Comparisons](https://twig.symfony.com/doc/3.x/templates.html#comparisons) (==, !=, <, >, >=, <=, [===](https://twig.symfony.com/doc/3.x/tests/sameas.html),  
-    starts with, ends with, has some, has every, matches)
+*   [Math](https://twig.symfony.com/doc/3.x/templates.html#math) (`+`, `-`, `/`, `%`, `//`, `\*`, `\*\*`)
+*   [Logic](https://twig.symfony.com/doc/3.x/templates.html#logic) (`and`, `or`, `not`, `()`, `b-and`, `b-xor`, `b-or`)
+*   [Comparisons](https://twig.symfony.com/doc/3.x/templates.html#comparisons) (`==`, `!=`, `<`, `>`, `>=`, `<=`, [===](https://twig.symfony.com/doc/3.x/tests/sameas.html), `starts with`, `ends with`, `has some`, `has every`, `matches`)
 *   [Others](https://twig.symfony.com/doc/3.x/templates.html#other-operators) (.., |, ~, ., \[\], ?:, ??)
 
-What is not required for Twig certification ?
-------------------------------------------------------------
+### ❌ What's Not Included in the Twig Certification?
 
-In the documentation page, there is a paragraph “Twig Reference for Symfony” which is not a section requested in the certification, since these functions are part of the _symfony/twig-bridge_ library. This part will be requested in the Symfony certification.
+The following are not required for the Twig certification:
 
-All those Filters, Functions ... with an Extension like MarkdownExtension, StringExtension, IntlExtension, HtmlExtension, CacheExtension, CssInlinerExtension, InkyExtension not installed by default are not in the certification.
+* Functions and filters specific to the `symfony/twig-bridge` library, covered in Symfony certification.
+* Any filters, functions, or tags provided by extensions like `MarkdownExtension`, `StringExtension`, `IntlExtension`, `HtmlExtension`, `CacheExtension`, `CssInlinerExtension`, and `InkyExtension` are not included.
 
-- currency_name
-- country_name
-- currency_symbol
-- data_uri
-- cache
-- inline_css
-- inky_to_html
-- language_name
-- locale_name
-- markdown_to_html
-- slug
-- timezone_name
-- country_names
-- country_timezones
-- currency_names
-- html_classes
-- language_names
-- locale_names
-- script_names
-- timezone_names
-- format_time
-- html_to_markdown
-- format_date
-- format_datetime
-- format_number
-- format_currency
-----------------------
-And to register, buy a voucher.
+### 📝 How to Register?
 
-https://certification.symfony.com/exams/twig.html
-For more informations, read this article: https://www.itefficience.com/article/la-certification-twig-une-1ere-pour-le-chemin-de-la-certif-symfony
-To train with our team, contact us on https://www.itefficience.com
+Ready to get certified? [Buy a voucher and register here](https://certification.symfony.com/exams/twig.html).
+
+For more information, read this [comprehensive article](https://www.itefficience.com/article/la-certification-twig-une-1ere-pour-le-chemin-de-la-certif-symfony).
+
+Interested in training with our team? [Contact us](https://www.itefficience.com/contact)!
