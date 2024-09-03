@@ -6,8 +6,8 @@ Welcome to this repository! Here, you can find all the resources you need to pre
 To pass the Twig certification, focus on two main areas:
 
 1. Core Knowledge: Start by reading and understanding the key concepts in these documents:
-   * Twig Template for Designers (Twig 2.x) 
-   * Twig Template for Designers (Twig 3.x)
+   * [Twig Template for Designers (Twig 2.x)](https://twig.symfony.com/doc/2.x/templates.html)
+   * [Twig Template for Designers (Twig 3.x)](https://twig.symfony.com/doc/2.x/templates.html)
 
 2. Tags, Functions, and Filters: Get familiar with the essential Twig tags, functions, and filters listed below. Aim to master these within a week, especially if you already have some experience with Twig.
 
