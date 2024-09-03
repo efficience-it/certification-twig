@@ -3,89 +3,89 @@ entities:
   -
     question: 'Does the sandbox tag permits to have local variable which are not available elsewhere ?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - {value: 'Yes', correct: false}
+      - {value: 'No', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/tags/sandbox.html'
   -
     question: 'Does the sandbox tag permits to include a template which would not be available elsewhere ?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/tags/sandbox.html'
   -
     question: 'Are these block names as tags possible ?'
     answers:
-      - { value: '{% block body-midle %}', correct: false }
-      - { value: '{% block 4body_midle %}', correct: false }
-      - { value: '{% block body4_midle %}', correct: true }
-      - { value: '{% block body4#_midle %}', correct: false }
+      - {value: '{% block body-midle %}', correct: false}
+      - {value: '{% block 4body_midle %}', correct: false}
+      - {value: '{% block body4_midle %}', correct: true}
+      - {value: '{% block body4#_midle %}', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/tags/block.html'
   -
     question: 'Is several variable assignments available in Twig ? {% set foo, bar = "foo", "bar" %} ?'
     answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
+      - {value: 'No', correct: false}
+      - {value: 'Yes', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/tags/block.html'
   -
     question: 'Does the variable foo is accessible outside the loop ? {% for item in list %}{% set foo = item %}{% endfor %} '
     answers:
-      - { value: 'No', correct: true }
-      - { value: 'Yes', correct: false }
+      - {value: 'No', correct: true}
+      - {value: 'Yes', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/tags/block.html'
   -
     question: 'Is it possible to capture chunks of text in Twig ?'
     answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
+      - {value: 'No', correct: false}
+      - {value: 'Yes', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/tags/block.html'
   -
     question: 'Which of these tests returns a boolean evaluation to true ?'
     answers:
-      - { value: 'empty string', correct: false }
-      - { value: 'numeric zero', correct: false }
-      - { value: 'NAN (Not A Number)', correct: true }
-      - { value: 'INF (Infinity)', correct: true }
-      - { value: 'whitespace-only string', correct: true }
-      - { value: 'string "0"', correct: false }
-      - { value: 'empty array', correct: false }
-      - { value: 'null', correct: false }
-      - { value: 'non-empty array', correct: true }
-      - { value: 'object', correct: true }
+      - {value: 'empty string', correct: false}
+      - {value: 'numeric zero', correct: false}
+      - {value: 'NAN (Not A Number)', correct: true}
+      - {value: 'INF (Infinity)', correct: true}
+      - {value: 'whitespace-only string', correct: true}
+      - {value: 'string "0"', correct: false}
+      - {value: 'empty array', correct: false}
+      - {value: 'null', correct: false}
+      - {value: 'non-empty array', correct: true}
+      - {value: 'object', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/tags/if.html'
   -
     question: 'What is the point of the tags "apply" ?'
     answers:
-      - { value: 'Apply a rule on a function', correct: false }
-      - { value: 'Apply a filter on a block', correct: true }
-      - { value: 'Apply a function on a string', correct: false }
+      - {value: 'Apply a rule on a function', correct: false}
+      - {value: 'Apply a filter on a block', correct: true}
+      - {value: 'Apply a function on a string', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/tags/apply.html'
   -
     question: 'Is a variable set between {% with %} and {% endwith %} available outside ?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/tags/with.html'
   -
     question: 'Is a variable set outside {% with only %} and {% endwith %} available inside ?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - {value: 'Yes', correct: false}
+      - {value: 'No', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/tags/with.html'
   -
     question: 'Is this code valid {% with {foo: "bar"} %} {{ foo }} {% endwith %}  ?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/tags/with.html'
   -
     question: 'Which of these affirmations is valid ?'
     answers:
-      - { value: '{{ attribute(object, "data-foo") }}', correct: true }
-      - { value: '{{ attribute(object, method) }}', correct: true }
-      - { value: '{{ attribute(object, method, arguments) }}', correct: true }
-      - { value: '{{ attribute(array, key) }}', correct: false }
-      - { value: '{{ attribute(array, item) }}', correct: true }
-      - { value: '{{ array.item) }}', correct: true }
-      - { value: '{{ object.method ) }}', correct: true }
+      - {value: '{{ attribute(object, "data-foo") }}', correct: true}
+      - {value: '{{ attribute(object, method) }}', correct: true}
+      - {value: '{{ attribute(object, method, arguments) }}', correct: true}
+      - {value: '{{ attribute(array, key) }}', correct: false}
+      - {value: '{{ attribute(array, item) }}', correct: true}
+      - {value: '{{ array.item) }}', correct: true}
+      - {value: '{{ object.method ) }}', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/tags/attribute.html'
 

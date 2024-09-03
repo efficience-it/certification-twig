@@ -3,90 +3,90 @@ entities:
   -
     question: 'What is the difference between min(3, 4, 12) and min([3,4,12]) ?'
     answers:
-      - { value: 'Min works only with an array', correct: false }
-      - { value: 'Min works only with a list', correct: false }
-      - { value: 'No difference', correct: true }
+      - {value: 'Min works only with an array', correct: false}
+      - {value: 'Min works only with a list', correct: false}
+      - {value: 'No difference', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/functions/min.html'
   -
     question: 'What will be rendered with {{ min({2: "e", 3: "a", 1: "b", 5: "d", 4: "c"}) }} ?'
     answers:
-      - { value: 'Min can only compare int values', correct: false }
-      - { value: 'a', correct: true }
-      - { value: '1', correct: false }
-      - { value: 'TwigException', correct: false }
+      - {value: 'Min can only compare int values', correct: false}
+      - {value: 'a', correct: true}
+      - {value: '1', correct: false}
+      - {value: 'TwigException', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/functions/min.html'
   -
     question: 'What is the difference between max(3, 4, 12) and max([3,4,12]) ?'
     answers:
-      - { value: 'Max works only with an array', correct: false }
-      - { value: 'Max works only with a list', correct: false }
-      - { value: 'No difference', correct: true }
+      - {value: 'Max works only with an array', correct: false}
+      - {value: 'Max works only with a list', correct: false}
+      - {value: 'No difference', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/functions/max.html'
   -
     question: 'What will be rendered with {{ max({2: "e", 3: "a", 1: "b", 5: "d", 4: "c"}) }} ?'
     answers:
-      - { value: 'Max can only compare int values', correct: false }
-      - { value: 'a', correct: true }
-      - { value: '1', correct: false }
-      - { value: 'TwigException', correct: false }
+      - {value: 'Max can only compare int values', correct: false}
+      - {value: 'a', correct: true}
+      - {value: '1', correct: false}
+      - {value: 'TwigException', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/functions/max.html'
   -
     question: 'Will {{ random("ABCD") }} render B ?'
     answers:
-      - { value: 'Maybe', correct: true }
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: false }
+      - {value: 'Maybe', correct: true}
+      - {value: 'Yes', correct: false}
+      - {value: 'No', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/functions/random.html'
   -
     question: 'Which value are possible with this function {{ random(50, 100) }} ?'
     answers:
-      - { value: '100', correct: true }
-      - { value: '44', correct: false }
-      - { value: '-44', correct: false }
-      - { value: '50', correct: true }
+      - {value: '100', correct: true}
+      - {value: '44', correct: false}
+      - {value: '-44', correct: false}
+      - {value: '50', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/functions/random.html'
   -
     question: 'What the difference between {% for i in range(0, 3) %} and {% for i in 0..3 %} ?'
     answers:
-      - { value: 'range starts at 0, the other don"t', correct: false }
-      - { value: 'range ends at 03, the other don"t', correct: false }
-      - { value: 'No difference', correct: true }
+      - {value: 'range starts at 0, the other don"t', correct: false}
+      - {value: 'range ends at 03, the other don"t', correct: false}
+      - {value: 'No difference', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/functions/range.html'
   -
     question: 'What are the three arguments od the function range ?'
     answers:
-      - { value: 'first value, highest value, increment between element', correct: true }
-      - { value: 'increment between element, first value, highest value', correct: false }
+      - {value: 'first value, highest value, increment between element', correct: true}
+      - {value: 'increment between element, first value, highest value', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/functions/range.html'
   -
     question: 'What is a correct argument for the function "date()" ?'
     answers:
-      - { value: 'DateTime object', correct: false }
-      - { value: '-2days', correct: true }
-      - { value: 'Midnight of yesterday', correct: true }
-      - { value: 'No Argument', correct: true }
+      - {value: 'DateTime object', correct: false}
+      - {value: '-2days', correct: true}
+      - {value: 'Midnight of yesterday', correct: true}
+      - {value: 'No Argument', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/functions/date.html'
   -
     question: 'What is the point of the function cycle ?'
     answers:
-      - { value: 'To give a random value in an array of values', correct: false }
-      - { value: 'To loop on an array of values inside a loop for', correct: true }
+      - {value: 'To give a random value in an array of values', correct: false}
+      - {value: 'To loop on an array of values inside a loop for', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/functions/cycle.html'
   -
     question: 'What is the output of this ? {% set fruits = ["apple", "orange"] %}{% for i in 0..4 %}{{ cycle(fruits, i) }}{% endfor %}'
     answers:
-      - { value: 'apple\norange\napple\norange\napple', correct: true }
-      - { value: 'orange\napple\norange\napple\norange', correct: true }
+      - {value: 'apple\norange\napple\norange\napple', correct: true}
+      - {value: 'orange\napple\norange\napple\norange', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/functions/cycle.html'
   -
     question: 'What are the options available in an include ?'
     answers:
-      - { value: 'with_context=true|false', correct: true }
-      - { value: 'context=true|false', correct: false }
-      - { value: 'ignore_missing=true|false', correct: true }
-      - { value: 'ignoreMissing=true|false', correct: false }
-      - { value: 'sandbox=true|false', correct: false }
-      - { value: 'sandboxed=true|false', correct: true }
+      - {value: 'with_context=true|false', correct: true}
+      - {value: 'context=true|false', correct: false}
+      - {value: 'ignore_missing=true|false', correct: true}
+      - {value: 'ignoreMissing=true|false', correct: false}
+      - {value: 'sandbox=true|false', correct: false}
+      - {value: 'sandboxed=true|false', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/functions/include.html'
 
 

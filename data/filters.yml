@@ -3,388 +3,388 @@ entities:
   -
     question: 'What should return {% set number = -5.3 %} {{ number|abs }}'
     answers:
-      - { value: '5.3', correct: true }
-      - { value: '5', correct: false }
-      - { value: 'TwigException: No float value allowed', correct: false }
+      - {value: '5.3', correct: true}
+      - {value: '5', correct: false}
+      - {value: 'TwigException: No float value allowed', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/abs.html'
   -
     question: 'What should return {{ -5.3|abs }}'
     answers:
-      - { value: '-5.3', correct: true }
-      - { value: '5.3', correct: false }
-      - { value: '5', correct: false }
-      - { value: 'TwigException: No float value allowed', correct: false }
+      - {value: '-5.3', correct: true}
+      - {value: '5.3', correct: false}
+      - {value: '5', correct: false}
+      - {value: 'TwigException: No float value allowed', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/abs.html'
   -
     question: 'What should return {{ "my first CAR"|capitalize }}'
     answers:
-      - { value: 'My First Car', correct: false }
-      - { value: 'My first car', correct: true }
-      - { value: 'MY FIRST CAR', correct: false }
-      - { value: 'My first CAR', correct: false }
+      - {value: 'My First Car', correct: false}
+      - {value: 'My first car', correct: true}
+      - {value: 'MY FIRST CAR', correct: false}
+      - {value: 'My first CAR', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/capitalize.html'
   -
     question: 'What should return {{ "my first CAR"|upper }}'
     answers:
-      - { value: 'My First Car', correct: false }
-      - { value: 'My first car', correct: false }
-      - { value: 'MY FIRST CAR', correct: true }
-      - { value: 'My first CAR', correct: false }
+      - {value: 'My First Car', correct: false}
+      - {value: 'My first car', correct: false}
+      - {value: 'MY FIRST CAR', correct: true}
+      - {value: 'My first CAR', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/upper.html'
   -
     question: 'What should return {{ "my first CAR"|lower }}'
     answers:
-      - { value: 'My First Car', correct: false }
-      - { value: 'my first car', correct: true }
-      - { value: 'MY FIRST CAR', correct: false }
-      - { value: 'My first CAR', correct: false }
+      - {value: 'My First Car', correct: false}
+      - {value: 'my first car', correct: true}
+      - {value: 'MY FIRST CAR', correct: false}
+      - {value: 'My first CAR', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/lower.html'
   -
     question: 'What should return {{ "my first CAR"|title }}'
     answers:
-      - { value: 'My First Car', correct: false }
-      - { value: 'My first car', correct: false }
-      - { value: 'MY FIRST CAR', correct: false }
-      - { value: 'My First Car', correct: true }
+      - {value: 'My First Car', correct: false}
+      - {value: 'My first car', correct: false}
+      - {value: 'MY FIRST CAR', correct: false}
+      - {value: 'My First Car', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/capitalize.html'
   -
     question: 'What should return {{ [1,3,5,7,9]|length }}'
     answers:
-      - { value: '5', correct: true }
-      - { value: '1', correct: false }
-      - { value: '9', correct: false }
+      - {value: '5', correct: true}
+      - {value: '1', correct: false}
+      - {value: '9', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/length.html'
   -
     question: 'What should return {{ "abcdefghijkl"|length }}'
     answers:
-      - { value: '12', correct: true }
-      - { value: '10', correct: false }
-      - { value: '13', correct: false }
+      - {value: '12', correct: true}
+      - {value: '10', correct: false}
+      - {value: '13', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/length.html'
   -
     question: 'How do you use the column ?'
     answers:
-      - { value: '[{ "fruit" : "apple"}, {"fruit" : "orange" }]|column("fruit")', correct: true }
-      - { value: 'column([{ "fruit" : "apple"}, {"fruit" : "orange" }], "fruit")', correct: false }
+      - {value: '[{ "fruit" : "apple"}, {"fruit" : "orange" }]|column("fruit")', correct: true}
+      - {value: 'column([{ "fruit" : "apple"}, {"fruit" : "orange" }], "fruit")', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/column.html'
   -
     question: 'Is that true "123" same as {{ ["1","2","3"]|join }} ?'
     answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
+      - {value: 'No', correct: false}
+      - {value: 'Yes', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/join.html'
   -
     question: 'How to override the separator in the join filter ?'
     answers:
-      - { value: 'By setting the first parameter with "the-separator"', correct: true }
-      - { value: 'By setting in the config.yml twig.join.separator', correct: false }
+      - {value: 'By setting the first parameter with "the-separator"', correct: true}
+      - {value: 'By setting in the config.yml twig.join.separator', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/join.html'
   -
     question: 'What is the second parameter in the join filter ?'
     answers:
-      - { value: 'The separator for the join', correct: false }
-      - { value: 'The catch Exception boolean', correct: false }
-      - { value: 'The return type array|string|int', correct: false }
-      - { value: 'The separator for the last pair of input items', correct: true }
+      - {value: 'The separator for the join', correct: false}
+      - {value: 'The catch Exception boolean', correct: false}
+      - {value: 'The return type array|string|int', correct: false}
+      - {value: 'The separator for the last pair of input items', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/join.html'
   -
     question: 'What is the point of doing this {{ "one,two,three"|split(",")|join(",") }} ?'
     answers:
-      - { value: 'The join will not be applied', correct: false }
-      - { value: 'The split will not be applied', correct: false }
-      - { value: 'Nothing, one does the reverse action of the other', correct: true }
+      - {value: 'The join will not be applied', correct: false}
+      - {value: 'The split will not be applied', correct: false}
+      - {value: 'Nothing, one does the reverse action of the other', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/split.html'
   -
     question: 'What is the output of this {{ "aabbcc"|split("", 2) }} ?'
     answers:
-      - { value: '[ ["a", "a"], ["b", "b"], ["c","c"]]', correct: false }
-      - { value: '["aa", "bb", "cb"]', correct: true }
+      - {value: '[ ["a", "a"], ["b", "b"], ["c","c"]]', correct: false}
+      - {value: '["aa", "bb", "cb"]', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/split.html'
   -
     question: 'What is the output of this {{ "one,two,three,four,five"|split(',', 3) }} ?'
     answers:
-      - { value: '["one", "two", "thre", "efo", "urf", "ive"]', correct: true }
-      - { value: '["one", "two", "three,four,five"]', correct: true }
+      - {value: '["one", "two", "thre", "efo", "urf", "ive"]', correct: true}
+      - {value: '["one", "two", "three,four,five"]', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/split.html'
   -
     question: 'Is this code valid {{ data|json_encode(constant("JSON_FORCE_OBJECT")) }} ?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/json_encode.html'
   -
     question: 'Which of these twig code outputs 8 ?'
     answers:
-      - { value: '{{ [1, 2, 4, 8]|last }}', correct: true }
-      - { value: '{{ 1248|last }}', correct: true }
-      - { value: '{{ { a: 1, b: 8, d: 4, e: 2 }|last }}', correct: false }
+      - {value: '{{ [1, 2, 4, 8]|last }}', correct: true}
+      - {value: '{{ 1248|last }}', correct: true}
+      - {value: '{{ { a: 1, b: 8, d: 4, e: 2 }|last }}', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/last.html'
   -
     question: 'Which of these twig code outputs 1 ?'
     answers:
-      - { value: '{{ [1, 2, 4, 8]|first }}', correct: true }
-      - { value: '{{ 1248|last }}', correct: true }
-      - { value: '{{ { a: 8, b: 1, d: 4, e: 2 }|last }}', correct: false }
+      - {value: '{{ [1, 2, 4, 8]|first }}', correct: true}
+      - {value: '{{ 1248|last }}', correct: true}
+      - {value: '{{ { a: 8, b: 1, d: 4, e: 2 }|last }}', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/first.html'
   -
     question: 'Which of these twig code outputs -45.6 ?'
     answers:
-      - { value: '{{ -42.55|round(1, "floor") }}', correct: true }
-      - { value: '{{ -42.55|round(1, "common") }}', correct: true }
-      - { value: '{{ -42.55|round(1, "ceil") }}', correct: false }
+      - {value: '{{ -42.55|round(1, "floor") }}', correct: true}
+      - {value: '{{ -42.55|round(1, "common") }}', correct: true}
+      - {value: '{{ -42.55|round(1, "ceil") }}', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/round.html'
   -
     question: 'In which case does the "default" filter set a default value to a variable ?'
     answers:
-      - { value: 'The variable is undefined', correct: true }
-      - { value: 'The variable is empty', correct: true }
-      - { value: 'The variable is true', correct: false }
-      - { value: 'The variable is false', correct: true }
-      - { value: 'The variable is null', correct: true }
+      - {value: 'The variable is undefined', correct: true}
+      - {value: 'The variable is empty', correct: true}
+      - {value: 'The variable is true', correct: false}
+      - {value: 'The variable is false', correct: true}
+      - {value: 'The variable is null', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/default.html'
   -
     question: 'Which PHP function does the {{ url_encode() }} use?'
     answers:
-      - { value: 'rawurlencode', correct: true }
-      - { value: 'raw_url_encode', correct: false }
-      - { value: 'urlencode', correct: false }
-      - { value: 'parse_url', correct: false }
-      - { value: 'http_build_query', correct: true }
-      - { value: 'build_url', correct: false }
+      - {value: 'rawurlencode', correct: true}
+      - {value: 'raw_url_encode', correct: false}
+      - {value: 'urlencode', correct: false}
+      - {value: 'parse_url', correct: false}
+      - {value: 'http_build_query', correct: true}
+      - {value: 'build_url', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/url_encode.html'
   -
     question: 'What is the output of this {{"  I like Twig.  "|trim(" ", "right") }} ?'
     answers:
-      - { value: 'I like Twig.  ', correct: false }
-      - { value: 'I like Twig.', correct: false }
-      - { value: '  I like Twig', correct: false }
-      - { value: '  I like Twig.', correct: true }
+      - {value: 'I like Twig.  ', correct: false}
+      - {value: 'I like Twig.', correct: false}
+      - {value: '  I like Twig', correct: false}
+      - {value: '  I like Twig.', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/trim.html'
   -
     question: 'What is the parameter given to the filter "|reverse" ? '
     answers:
-      - { value: 'The number of reverse to execute', correct: false }
-      - { value: '"key|value" to order by the key or the value of the array given', correct: false }
-      - { value: 'A bool to preserve the keys in the reordering I like Twig', correct: true }
+      - {value: 'The number of reverse to execute', correct: false}
+      - {value: '"key|value" to order by the key or the value of the array given', correct: false}
+      - {value: 'A bool to preserve the keys in the reordering I like Twig', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/reverse.html'
   -
     question: 'Which of these sentences will return "I like fruits" ?'
     answers:
-      - { value: '{{ "I like this"|replace({"this": "fruits"}) }}', correct: true }
-      - { value: '{{ "I like %this%"|replace({"%this%": "fruits"}) }}', correct: true }
-      - { value: '{{ "I like $this"|replace({"$this": "fruits"}) }}', correct: true }
-      - { value: '{{ "I like i"|replace({"i": "fruits"}) }}', correct: false }
+      - {value: '{{ "I like this"|replace({"this": "fruits"}) }}', correct: true}
+      - {value: '{{ "I like %this%"|replace({"%this%": "fruits"}) }}', correct: true}
+      - {value: '{{ "I like $this"|replace({"$this": "fruits"}) }}', correct: true}
+      - {value: '{{ "I like i"|replace({"i": "fruits"}) }}', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/replace.html'
   -
     question: 'Does the filter nl2br transform \t to a tab ?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - {value: 'Yes', correct: false}
+      - {value: 'No', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/nl2br.html'
   -
     question: 'What is the purpose of the "reduce" filter ?'
     answers:
-      - { value: 'Reduce all the values of an array', correct: false }
-      - { value: 'Reduce the number of value in an array', correct: false }
-      - { value: 'Reduce a sequence or a mapping to a single value', correct: true }
+      - {value: 'Reduce all the values of an array', correct: false}
+      - {value: 'Reduce the number of value in an array', correct: false}
+      - {value: 'Reduce a sequence or a mapping to a single value', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/reduce.html'
   -
     question: 'What is the second argument of the "reduce" filter ?'
     answers:
-      - { value: 'The number of times the function must be performed', correct: false }
-      - { value: 'The initial value', correct: true }
+      - {value: 'The number of times the function must be performed', correct: false}
+      - {value: 'The initial value', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/reduce.html'
   -
     question: 'What is the way to get the keys of an array ?'
     answers:
-      - { value: '{% for key in array|keys %}...{% endfor %}', correct: true }
-      - { value: '{% for key, value in array %}...{% endfor %}', correct: true }
-      - { value: '{% for key in keys(array) %}...{% endfor %}', correct: false }
-      - { value: '{% foreach array as {key:value}  %}...{% endfor %}', correct: false }
+      - {value: '{% for key in array|keys %}...{% endfor %}', correct: true}
+      - {value: '{% for key, value in array %}...{% endfor %}', correct: true}
+      - {value: '{% for key in keys(array) %}...{% endfor %}', correct: false}
+      - {value: '{% foreach array as {key:value}  %}...{% endfor %}', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/keys.html'
   -
     question: 'What is the supported value for the filter "date_modify" ?'
     answers:
-      - { value: 'String under the format of strtotime', correct: true }
-      - { value: 'DateTime object', correct: true }
-      - { value: 'Date object', correct: false }
-      - { value: 'Int of the time() function', correct: false }
+      - {value: 'String under the format of strtotime', correct: true}
+      - {value: 'DateTime object', correct: true}
+      - {value: 'Date object', correct: false}
+      - {value: 'Int of the time() function', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/date_modify.html'
   -
     question: 'What is the point of the filters batch ?'
     answers:
-      - { value: 'To launch a command line from Twig', correct: false }
-      - { value: 'To build a list of lists with the given number of items', correct: true }
-      - { value: 'To send data to a controller', correct: false }
+      - {value: 'To launch a command line from Twig', correct: false}
+      - {value: 'To build a list of lists with the given number of items', correct: true}
+      - {value: 'To send data to a controller', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/batch.html'
   -
     question: 'What is the default "decimal places" formatted by the "number_format" ?'
     answers:
-      - { value: '"0", so 42.44 becomes 42', correct: true }
-      - { value: '"1", so 42.44 becomes 42.4', correct: false }
-      - { value: '"2", so 42.44 stays 42.44', correct: false }
+      - {value: '"0", so 42.44 becomes 42', correct: true}
+      - {value: '"1", so 42.44 becomes 42.4', correct: false}
+      - {value: '"2", so 42.44 stays 42.44', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/number_format.html'
   -
     question: 'What is the default "decimal point" formatted by the "number_format" ?'
     answers:
-      - { value: '".", so we see 42.44', correct: true }
-      - { value: '",", so we see 42,44', correct: false }
+      - {value: '".", so we see 42.44', correct: true}
+      - {value: '",", so we see 42,44', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/number_format.html'
   -
     question: 'What is the default "thousands separator" formatted by the "number_format" ?'
     answers:
-      - { value: '".", so we see 1.042.44', correct: false }
-      - { value: '",", so we see 1,042.44', correct: true }
+      - {value: '".", so we see 1.042.44', correct: false}
+      - {value: '",", so we see 1,042.44', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/number_format.html'
   -
     question: 'What is the type accepted by the merge filter ?'
     answers:
-      - { value: 'array with array', correct: true }
-      - { value: 'Traversable objects with Traversable objects', correct: true }
-      - { value: 'string with string', correct: false }
+      - {value: 'array with array', correct: true}
+      - {value: 'Traversable objects with Traversable objects', correct: true}
+      - {value: 'string with string', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/merge.html'
   -
     question: 'What is the second argument of the filter "|map" ?'
     answers:
-      - { value: 'Maximim value to apply the function in the arrow', correct: false }
-      - { value: 'No Argument', correct: true }
+      - {value: 'Maximim value to apply the function in the arrow', correct: false}
+      - {value: 'No Argument', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/map.html'
   -
     question: 'What tags won"t be removed in {{ some_html|striptags("<br><p>") }} ?'
     answers:
-      - { value: '<br>', correct: true }
-      - { value: '</br>', correct: true }
-      - { value: '<br/>', correct: false }
-      - { value: '</p>', correct: true }
-      - { value: '<p>', correct: true }
-      - { value: 'Any other html tag', correct: false }
+      - {value: '<br>', correct: true}
+      - {value: '</br>', correct: true}
+      - {value: '<br/>', correct: false}
+      - {value: '</p>', correct: true}
+      - {value: '<p>', correct: true}
+      - {value: 'Any other html tag', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/map.html'
   -
     question: 'What is the second argument to date filter ?'
     answers:
-      - { value: 'the output format of the datetime', correct: false }
-      - { value: 'the output format of the date', correct: false }
-      - { value: 'the output format of the time', correct: false }
-      - { value: 'the timezone', correct: true }
-      - { value: 'the default value', correct: false }
+      - {value: 'the output format of the datetime', correct: false}
+      - {value: 'the output format of the date', correct: false}
+      - {value: 'the output format of the time', correct: false}
+      - {value: 'the timezone', correct: true}
+      - {value: 'the default value', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/date.html'
   -
     question: 'What is the second argument to date filter ?'
     answers:
-      - { value: 'the output format of the datetime', correct: false }
-      - { value: 'the output format of the date', correct: false }
-      - { value: 'the output format of the time', correct: false }
-      - { value: 'the timezone or false if datetime is an object', correct: true }
-      - { value: 'the default value', correct: false }
+      - {value: 'the output format of the datetime', correct: false}
+      - {value: 'the output format of the date', correct: false}
+      - {value: 'the output format of the time', correct: false}
+      - {value: 'the timezone or false if datetime is an object', correct: true}
+      - {value: 'the default value', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/date.html'
   -
     question: 'What is the default format of the filter date ?'
     answers:
-      - { value: 'm/d/Y', correct: false }
-      - { value: 'F jS \\a\\t g:ia', correct: false }
-      - { value: 'F j, Y H:i', correct: true }
+      - {value: 'm/d/Y', correct: false}
+      - {value: 'F jS \\a\\t g:ia', correct: false}
+      - {value: 'F j, Y H:i', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/date.html'
   -
     question: 'What are the two arguments of the filter convert_encoding(XX,YY) ?'
     answers:
-      - { value: 'to as the 1st argument', correct: true }
-      - { value: 'to as the 2nd argument', correct: false }
-      - { value: 'from as the 1st argument', correct: false }
-      - { value: 'from as the 2nd argument', correct: true }
+      - {value: 'to as the 1st argument', correct: true}
+      - {value: 'to as the 2nd argument', correct: false}
+      - {value: 'from as the 1st argument', correct: false}
+      - {value: 'from as the 2nd argument', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/convert_encoding.html'
   -
     question: 'Whats is the point of the "spaceless" filter ?'
     answers:
-      - { value: 'Optimize the size of the generated html content', correct: false }
-      - { value: 'Avoid browser rendering quirks under some circumstances', correct: true }
-      - { value: 'Remove whitespace between HTML tags', correct: true }
+      - {value: 'Optimize the size of the generated html content', correct: false}
+      - {value: 'Avoid browser rendering quirks under some circumstances', correct: true}
+      - {value: 'Remove whitespace between HTML tags', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/spaceless.html'
   -
     question: 'What is the equivalent in php of the filters "format" ?'
     answers:
-      - { value: 'sprintf', correct: true }
-      - { value: 'format', correct: false }
-      - { value: 'str_replace', correct: false }
+      - {value: 'sprintf', correct: true}
+      - {value: 'format', correct: false}
+      - {value: 'str_replace', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/format.html'
   -
     question: 'What will render {% verbatim %} {{ "hello" }} {% endverbatim %} ?'
     answers:
-      - { value: 'hello', correct: false }
-      - { value: '{{ "hello" }}', correct: true }
-      - { value: 'TwigException', correct: false }
+      - {value: 'hello', correct: false}
+      - {value: '{{ "hello" }}', correct: true}
+      - {value: 'TwigException', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/verbatim.html'
   -
     question: 'What is the difference between {% for i in array[start:length] %} and {% for i in array|slice(start, length) %} ?'
     answers:
-      - { value: 'slice start à 0, [] at 1', correct: false }
-      - { value: 'No Difference', correct: true }
-      - { value: 'TwigException', correct: false }
+      - {value: 'slice start à 0, [] at 1', correct: false}
+      - {value: 'No Difference', correct: true}
+      - {value: 'TwigException', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/slice.html'
   -
     question: 'What is the difference between include() and source() ?'
     answers:
-      - { value: 'They are the same', correct: false }
-      - { value: 'Source returns the content of a template without rendering it', correct: true }
+      - {value: 'They are the same', correct: false}
+      - {value: 'Source returns the content of a template without rendering it', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/functions/source.html'
   -
     question: 'If the source() does not find the template what happened ?'
     answers:
-      - { value: 'It will throw an Exception', correct: true }
-      - { value: 'By setting the 2nd argument with ignore_missing=true, it will not throw an exception', correct: true }
-      - { value: 'Nothing happened', correct: false }
+      - {value: 'It will throw an Exception', correct: true}
+      - {value: 'By setting the 2nd argument with ignore_missing=true, it will not throw an exception', correct: true}
+      - {value: 'Nothing happened', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/functions/source.html'
   -
     question: 'Does the "sort" filters maintain index association ?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No, but I can set it', correct: false }
-      - { value: 'Impossible', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No, but I can set it', correct: false}
+      - {value: 'Impossible', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/functions/sort.html'
   -
     question: 'How can I get the current iteration during a loop for ?'
     answers:
-      - { value: 'using loop.index which starts at 1', correct: true }
-      - { value: 'using loop.index0 which starts at 0', correct: true }
-      - { value: 'using loop.getIndex which starts at 1', correct: false }
-      - { value: 'using loop.getIndex0 which starts at 0', correct: false }
+      - {value: 'using loop.index which starts at 1', correct: true}
+      - {value: 'using loop.index0 which starts at 0', correct: true}
+      - {value: 'using loop.getIndex which starts at 1', correct: false}
+      - {value: 'using loop.getIndex0 which starts at 0', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/tags/for.html'
   -
     question: 'How can I know if my iteration is at its first iteration, or last iteration ?'
     answers:
-      - { value: 'By counting the total length and subtracting the index', correct: false }
-      - { value: 'By getting loop.first or loop.last', correct: true }
+      - {value: 'By counting the total length and subtracting the index', correct: false}
+      - {value: 'By getting loop.first or loop.last', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/tags/for.html'
   -
     question: 'By default, what does the filter "escape" escape ?'
     answers:
-      - { value: 'css', correct: false }
-      - { value: 'js', correct: false }
-      - { value: 'html', correct: true }
-      - { value: 'php', correct: false }
+      - {value: 'css', correct: false}
+      - {value: 'js', correct: false}
+      - {value: 'html', correct: true}
+      - {value: 'php', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/escape.html'
   -
     question: 'What strategy is supported by the "escape" filter or autoescape tags ?'
     answers:
-      - { value: 'css', correct: true }
-      - { value: 'js', correct: true }
-      - { value: 'html', correct: true }
-      - { value: 'php', correct: false }
-      - { value: 'url', correct: true }
-      - { value: 'html_attr', correct: true }
+      - {value: 'css', correct: true}
+      - {value: 'js', correct: true}
+      - {value: 'html', correct: true}
+      - {value: 'php', correct: false}
+      - {value: 'url', correct: true}
+      - {value: 'html_attr', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/escape.html'
   -
     question: 'What renders this code: {% set sizes = [34, 36, 38, 40, 42] %}{{ sizes|filter(v => v > 38)|join(', ') }}'
     answers:
-      - { value: '34, 36', correct: false }
-      - { value: '38', correct: false }
-      - { value: '40, 42', correct: true }
+      - {value: '34, 36', correct: false}
+      - {value: '38', correct: false}
+      - {value: '40, 42', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/filter.html'
   -
     question: 'Does the "filter" parent() return the'
     answers:
-      - { value: '34, 36', correct: false }
-      - { value: '38', correct: false }
-      - { value: '40, 42', correct: true }
+      - {value: '34, 36', correct: false}
+      - {value: '38', correct: false}
+      - {value: '40, 42', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/filters/filter.html'
 
 
