@@ -1,5 +1,5 @@
 {
-  "name": "efficience_it/certificationy-twig",
+  "name": "efficience_it/certification-twig",
   "type": "library",
   "keywords": ["symfony", "certification", "test", "exam", "twig"],
   "description": "A series of questions to prepare for the certification Twwig",
